@@ -1,2 +1,19 @@
-cd your-repo-name
-touch vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api.js",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/*",
+      "dest": "/api/"
+    },
+    {
+      "src": "*",
+      "dest": "/"
+    }
+  ]
+}
