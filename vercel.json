@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "env": {
+    "API_KEY": "sk-Ag6dTnH76-uDEaYMd-m0DGYLrDgctKmKpqvZnxabhxT3BlbkFJTZMTwT43fkBQfQ4Gvqk-YpBqFsVF7wRERjNTSWwwgA"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_API_KEY": "sk-Ag6dTnH76-uDEaYMd-m0DGYLrDgctKmKpqvZnxabhxT3BlbkFJTZMTwT43fkBQfQ4Gvqk-YpBqFsVF7wRERjNTSWwwgA"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
+  ]
+}
